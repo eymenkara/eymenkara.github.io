@@ -1,0 +1,36 @@
+/* Change "Start new chat" button */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2._1q15b0b4::before {
+    content: "Yeni sohbet başlat";
+}
+
+/* Change "Cancel" button */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b3._1q15b0b4::before {
+    content: "İptal";
+}
+
+/* Hide the original text */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2._1q15b0b4,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b3._1q15b0b4 {
+    position: relative;
+    color: transparent; /* Hide original text */
+}
+
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2._1q15b0b4::before{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust as needed */
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b3._1q15b0b4::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Adjust as needed */
+    white-space: nowrap;
+    pointer-events: none;
+}
